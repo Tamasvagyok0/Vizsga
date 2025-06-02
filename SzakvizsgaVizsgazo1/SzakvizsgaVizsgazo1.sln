@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalapacsvetes", "Kalapacsvetes\Kalapacsvetes.csproj", "{44F278A2-849F-457A-A5D3-4736F086AD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KozosKonyvtar", "KozosKonyvtar\KozosKonyvtar.csproj", "{0BDA1E03-08B1-49B9-848D-7CB99A727D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalapacsvetes.API", "Kalapacsvetes.API\Kalapacsvetes.API.csproj", "{FE12C6D5-1782-4B97-97FA-9D4EF2C79EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalapacsvetes.WPF", "Kalapacsvetes.WPF\Kalapacsvetes.WPF.csproj", "{218FAA8A-C67E-4DDE-AAA6-C1C2A7E31ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendezvenyszervezes", "Rendezvenyszervezes\Rendezvenyszervezes.csproj", "{21E83CB0-824B-4E1C-97DD-8D6208F5A7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalapacsvetes.Client", "Kalapacsvetes.Client\Kalapacsvetes.Client.csproj", "{F1DB4F00-0DC6-4E8A-A898-98339215A7BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F278A2-849F-457A-A5D3-4736F086AD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F278A2-849F-457A-A5D3-4736F086AD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F278A2-849F-457A-A5D3-4736F086AD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F278A2-849F-457A-A5D3-4736F086AD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDA1E03-08B1-49B9-848D-7CB99A727D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDA1E03-08B1-49B9-848D-7CB99A727D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDA1E03-08B1-49B9-848D-7CB99A727D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDA1E03-08B1-49B9-848D-7CB99A727D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE12C6D5-1782-4B97-97FA-9D4EF2C79EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE12C6D5-1782-4B97-97FA-9D4EF2C79EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE12C6D5-1782-4B97-97FA-9D4EF2C79EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE12C6D5-1782-4B97-97FA-9D4EF2C79EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218FAA8A-C67E-4DDE-AAA6-C1C2A7E31ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218FAA8A-C67E-4DDE-AAA6-C1C2A7E31ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218FAA8A-C67E-4DDE-AAA6-C1C2A7E31ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218FAA8A-C67E-4DDE-AAA6-C1C2A7E31ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E83CB0-824B-4E1C-97DD-8D6208F5A7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E83CB0-824B-4E1C-97DD-8D6208F5A7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E83CB0-824B-4E1C-97DD-8D6208F5A7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E83CB0-824B-4E1C-97DD-8D6208F5A7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DB4F00-0DC6-4E8A-A898-98339215A7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DB4F00-0DC6-4E8A-A898-98339215A7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DB4F00-0DC6-4E8A-A898-98339215A7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DB4F00-0DC6-4E8A-A898-98339215A7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C144D682-4EB5-4ADC-AE12-28CFE4B0B477}
+	EndGlobalSection
+EndGlobal

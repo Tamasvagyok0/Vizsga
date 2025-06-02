@@ -1,0 +1,15 @@
+
+.bg-header { /* 3. feladat*/
+    background-image: url('assets/img/header-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    background-color: #2fa6c6; /* 4. feladat*/
+}
+
+/* 6. feladat*/
+#szolgaltatasok,
+#akcio {
+    background-color: #c2eefb;
+}

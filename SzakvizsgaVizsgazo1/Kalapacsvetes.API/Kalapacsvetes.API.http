@@ -1,0 +1,6 @@
+@Kalapacsvetes.API_HostAddress = http://localhost:5274
+
+GET {{Kalapacsvetes.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

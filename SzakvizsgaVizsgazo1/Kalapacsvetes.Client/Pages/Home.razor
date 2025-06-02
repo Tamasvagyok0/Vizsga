@@ -1,0 +1,270 @@
+﻿@page "/"
+@using KozosKonyvtar.MODEL
+@inject HttpClient Http
+
+<div id="page-top">
+    <!-- Fejléc -->
+    <header class="masthead bg-primary text-white text-center bg-header">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-3"><em>„A végén mindig az jár jól, aki tud csapatjátékos lenni.”</em></h1>
+                <h2 class="masthead-subheading mb-0">Charles Leclerc</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rólunk -->
+    <section class="page-section bg-primary text-secondary mb-0" id="rolunk">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase mb-5">Rólunk</h2>
+            <p>
+                Feldobnának egy céges rendezvényt? Csapatépítő tréningen vennének részt?
+                Fejlesztenék kommunikációs készségüket?
+                Régi, jól bevált játékokat próbálnának ki? Esetleg valamilyen teljesen új dolgot?
+                A természetben? Egy nagyvárosban? A cég irodájában vagy egy külső helyszínen?
+                Vagy inkább online?
+                Együtt sportolnának, vagy csapatokban, egymás ellen küzdenének?
+                Sport helyett inkább a szellemi kihívásokat preferálják?
+            </p>
+            <p>
+                Bármi is a válasz a kérdésekre, mi megszervezzük! Cégünk 25 éve, országszerte vállal céges rendezvények,
+                csapatépítő tréningek, sportnapok és egyéb rendezvények szervezését és lebonyolítását.
+                Programjaink az igényeknek megfelelően teljesen személyre szabhatók. Célunk, hogy a munkatársaik
+                jó hangulatú programokon vegyenek részt, közös élményeket szerezzenek, és jobban megismerjék egymást,
+                ezzel is elősegítve a hatékonyabb munkavégzést.
+            </p>
+        </div>
+    </section>
+
+    <!-- Szolgáltatások -->
+    <section class="page-section szolgaltatasok" id="szolgaltatasok">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Szolgáltatások</h2>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/szabadteri.jpg" alt="Szabadtéri rendezvények"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Szabadtéri rendezvények</a>
+                            </h4>
+                            <p class="card-text">
+                                Kirándulás a természetben, jó levegő, madárcsicsergés. Lehet akadályverseny a program,
+                                szabadtéri sportok kipróbálása, szalonnasütés, vagy bográcsozás.
+                                Ha a földútnál vonzóbb a beton, akkor a városfelfedező játékokat ajánljuk,
+                                akár gyalogosan, akár valamilyen jármű igénybevételével.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/evezes.jpg" alt="Vizi sportok"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Vizi sportok</a>
+                            </h4>
+                            <p class="card-text">
+                                Balaton, Velencei tó, Fertő tó, Tisza-tó, Duna, Tisza, Dráva…
+                                Vizitúra kajakkal vagy csónakkal, esetleg sárkányhajóval.
+                                Ha elég meleg az idő, más vízi sportok is kipróbálhatók.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/belteri.png" alt="Beltéri csapatépítés"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Beltéri csapatépítés</a>
+                            </h4>
+                            <p class="card-text">
+                                Ha az időjárási körülmények nem ideálisak a kültéri programokhoz, akkor rengeteg beltéri
+                                lehetőség közül lehet választani. Társasjátékok, kommunikációs játékok, parti játékok…
+                                érdeklődési körnek megfelelően.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/szabaduloszoba.png" alt="Szabadulószoba"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Szabadulószoba</a>
+                            </h4>
+                            <p class="card-text">
+                                Különböző tematikájú és nehézségű szabadulószobáinkkal próbára tehetik a csapatok logikai
+                                és együttműködési készségüket. A legtöbb szabadulószobánk bármilyen helyszínre kitelepíthető.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Új: Online csapatépítés -->
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/online.jpg" alt="Online"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Online csapatépítés</a>
+                            </h4>
+                            <p class="card-text">
+                                Ha a munkatársak túl távol dolgoznak egymástól, vagy valamilyen okból nem lehet személyes találkozással
+                                megvalósítani a csapatépítést, akkor számos online lehetőséget tudunk ajánlani.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="./assets/img/teamwork.png" alt="Tréningek"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Tréningek és workshopok</a>
+                            </h4>
+                            <p class="card-text">
+                                Számos különböző témájú tréninggel és workshoppal tudjuk fejleszteni kollégái készségeit.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-block btn-primary">További információ</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ajánlat kérés -->
+    <section class="page-section" id="ajanlat">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ajánlat kérés</h2>
+
+            <div class="row">
+                <div class="form_container col-md-8 mx-auto my-3">
+
+                    @if (!string.IsNullOrEmpty(HibaUzenet))
+                    {
+                        <div class="alert alert-danger">@HibaUzenet</div>
+                    }
+                    @if (!string.IsNullOrEmpty(SikerUzenet))
+                    {
+                        <div class="alert alert-success">@SikerUzenet</div>
+                    }
+
+                    <EditForm Model="@ujErdeklodes" OnValidSubmit="KuldErdeklodest">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <InputText id="name" class="form-control my-2" @bind-Value="ujErdeklodes.Nev" placeholder="Név" />
+                        <InputText id="phone" class="form-control my-2" @bind-Value="ujErdeklodes.Telefon" placeholder="Telefonszám" />
+                        <InputText id="email" class="form-control my-2" @bind-Value="ujErdeklodes.Email" placeholder="Email cím" />
+                        <InputTextArea id="message" class="form-control my-2" @bind-Value="ujErdeklodes.Uzenet" placeholder="Egyéb információk" />
+
+                        <div class="form-check my-2">
+                            <InputCheckbox id="adatkezelesiInput" class="form-check-input" @bind-Value="AdatkezelesElfogadva" />
+                            <label for="adatkezelesiInput" class="form-check-label">
+                                Elfogadom az adatkezelési szabályzatot.
+                            </label>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Ajánlat kérés</button>
+                    </EditForm>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Akció -->
+    <section class="page-section text-secondary mb-0" id="akcio">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase mb-5">Akció</h2>
+            <p>
+                Most <span class="kedvezmeny font-weight-bold">5</span>% kedvezményt
+                kapnak minimum <span class="kedvezmeny font-weight-bold">3</span> napos,
+                legalább <span class="kedvezmeny font-weight-bold">200</span> fős rendezvény esetén
+                fotós-videós kiegészítő szolgáltatásunk árából.
+            </p>
+        </div>
+    </section>
+</div>
+
+@code {
+    private Erdeklodes ujErdeklodes = new();
+    private bool AdatkezelesElfogadva = false;
+    private string? HibaUzenet;
+    private string? SikerUzenet;
+
+    private async Task KuldErdeklodest()
+    {
+        HibaUzenet = null;
+        SikerUzenet = null;
+
+        if (string.IsNullOrWhiteSpace(ujErdeklodes.Nev))
+        {
+            HibaUzenet = "Kérem, adja meg a nevét!";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(ujErdeklodes.Telefon))
+        {
+            HibaUzenet = "Kérem, adja meg a telefonszámát!";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(ujErdeklodes.Email))
+        {
+            HibaUzenet = "Kérem, adja meg az email címét!";
+            return;
+        }
+        if (!AdatkezelesElfogadva)
+        {
+            HibaUzenet = "Kérem, fogadja el az adatvédelmi szabályzatot!";
+            return;
+        }
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("https://localhost:44350/api/Erdeklodes", ujErdeklodes);
+
+            if (response.IsSuccessStatusCode)
+            {
+                SikerUzenet = "Köszönjük megkeresését, hamarosan jelentkezünk!";
+                ujErdeklodes = new();
+                AdatkezelesElfogadva = false;
+            }
+            else
+            {
+                HibaUzenet = "Hiba történt az elküldés során. Kérjük, próbálja meg újra.";
+            }
+        }
+        catch
+        {
+            HibaUzenet = "Hálózati hiba történt. Ellenőrizze az internetkapcsolatot.";
+        }
+    }
+}

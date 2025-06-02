@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Kalapacsvetes.API\\Kalapacsvetes.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "Kalapacsvetes.WPF\\Kalapacsvetes.WPF.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Kalapacsvetes\\Kalapacsvetes.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Rendezvenyszervezes\\Rendezvenyszervezes.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Kalapacsvetes.Client\\Kalapacsvetes.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
