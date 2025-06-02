@@ -1,0 +1,11 @@
+Kép:
+img/online.jpg
+
+Kép helyettesítő szöveg:
+Online
+
+Cím:
+Online csapatépítés
+
+Leírás:
+Ha a munkatársak túl távol dolgoznak egymástól, vagy valamilyen okból nem lehet személyes találkozással megvalósítani a csapatépítést, akkor számos online lehetőséget tudunk ajánlani.
